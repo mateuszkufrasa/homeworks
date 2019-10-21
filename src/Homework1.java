@@ -1,4 +1,4 @@
-public class Homework3 {
+class Homework3 {
     byte x = 1;
     short y = 15000;
     int z = 100500;
