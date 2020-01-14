@@ -23,25 +23,15 @@ public class Homework6 {
             }
         }
 
-        boolean usrNum = false;
-        while(!usrNum) {
-            usrNum = true;
             System.out.println("> How many numbers do you want to create?");
             int usrAmount = input.nextInt();
-            try {
                 Random rnd = new Random();
                 int number;
                 for (int i = 0; i < usrAmount; i++) {
                     number = rnd.nextInt(1000);
                     System.out.println("> #" + (i + 1) + ": " + "\t" + number);
-                } }
-            catch (InputMismatchException e) {
-                System.out.println("> Type correct number: ");
-                usrNum = false;
-            }
-
+                }
         }
-    }
 
     enum Lang {EN, ES, FIN, FR, IT, GER, NOR, PL, UA};
 }
